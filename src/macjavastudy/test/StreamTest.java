@@ -9,15 +9,13 @@ public class StreamTest {
 
 	public static void main(String[] args) {
 		
-		List<String> list = Arrays.asList("홍길동","신용권","김남준","람다식","병렬처리");
+		List<String> list = Arrays.asList("베토벤","바흐","헨델","모차르트");
 	    Stream<String> stream = list.stream();
-	    //stream.forEach(StreamTest::print);
 	    stream.forEach(n -> print(n));
 	   
 	    
 	    
 	    Stream<String> parallelStream = list.parallelStream();
-	    //parallelStream.forEach(StreamTest::print);
 	    parallelStream.forEach(n -> print(n));
 	}
 	
