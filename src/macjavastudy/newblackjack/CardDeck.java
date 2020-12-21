@@ -65,9 +65,18 @@ public class CardDeck {
 	
 	public Card pickCard() {
 		int rn = (int)(Math.random()*52)+1;
+		Card pickedCard;
 		
-		Card pickedCard = cardList.get(rn);
-		cardList.remove(rn);
+		try {
+			pickedCard = cardList.get(rn);
+			cardList.remove(rn);
+		} catch(IndexOutOfBoundsException e) {
+			int newrn = (int)(Math.random()*52)+1;
+			pickedCard = cardList.get(newrn);
+			cardList.remove(newrn);
+		}
+		
+		
 		
 		return pickedCard;
 	}

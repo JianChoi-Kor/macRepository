@@ -16,8 +16,12 @@ public class Dealer {
 	}
 
 	public int countScore() {
+		int score = 0;
 		
+		for(int i=0; i<dealerList.size(); i++) {
+			score += dealerList.get(i).getScore();
+		}
 		
-		return null;
+		return score;
 	}
 }

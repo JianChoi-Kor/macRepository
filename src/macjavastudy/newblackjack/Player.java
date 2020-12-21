@@ -14,4 +14,15 @@ public class Player {
 	public void saveCard(Card card) {
 		playerList.add(card);
 	}
+	
+	public int countScore() {
+		int score = 0;
+		
+		for(int i=0; i<playerList.size(); i++) {
+			score += playerList.get(i).getScore();
+		}
+		
+		return score;
+	}
+	
 }
