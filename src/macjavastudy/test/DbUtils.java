@@ -3,7 +3,7 @@ package macjavastudy.test;
 public class DbUtils {
 	
 	private static DbUtils du;
-	private DbUtils() {{}
+	private DbUtils() {}
 	
 	
 	public static DbUtils getInstance() {
@@ -14,8 +14,8 @@ public class DbUtils {
 	}
 	
 	public void hello() {
-		System.out.println("안");
+		System.out.println("Hi");
 	}
-	
-
 }
+
+

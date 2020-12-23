@@ -10,8 +10,12 @@ public class DbUtilsTest {
 		
 		du1.hello();
 		
+		System.out.println(du1);
+		System.out.println(du2);
+		
 		System.out.println(du1 == du2);
-
 	}
-
 }
+
+
+
