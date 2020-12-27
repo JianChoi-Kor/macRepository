@@ -17,7 +17,7 @@ public class RunnableTest implements Runnable {
 		}
 		System.out.println(threadNum+"번 threa 중료");
 	}
-	
+	d
 	public static void main(String[] args) {
 		for(int i=1; i<=5; i++) {
 			Thread t = new Thread(new RunnableTest(i));
