@@ -8,8 +8,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/calc")
-public class Calc extends HttpServlet {
+@WebServlet("/calc2")
+public class Calc2 extends HttpServlet {
 	
 	@Override
 	public void service(HttpServletRequest req
@@ -38,6 +38,7 @@ public class Calc extends HttpServlet {
 		
 		out.printf("result : %d \n", result);
 	}
+		
 }
 
 
